@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>login/signup page</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="login-form hidden">
+        <form>
+          <h2>Login</h2>
+
+          <label for="Email">Email</label>
+          <input
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="Email"
+            required
+          />
+          <br />
+
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <br />
+
+          <div class="recov-cont">
+            <a href="#" class="recov-pass">Forgot password</a>
+          </div>
+          <div class="form-btn">
+            <button class="login-btn">Login</button>
+          </div>
+
+          <p class="signup-link">
+            Don't have an account? <span class="link">signup here</span>
+          </p>
+        </form>
+      </div>
+
+      <div class="signup-form">
+        <form>
+          <h2>Register</h2>
+
+          <div class="names">
+            <div>
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Mark"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Smith"
+                required
+              />
+            </div>
+          </div>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="marksmith@...mail.com"
+            required
+          />
+          <br />
+
+          <label for="new-password">Password</label>
+          <input
+            type="text"
+            name="new-password"
+            id="new-password"
+            placeholder="Password"
+            required
+          />
+          <br />
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            for="confirm-password"
+            id="=confirm-password"
+            type="text"
+            name="confirm-password"
+            placeholder="Confirm password"
+            required
+          />
+          <br />
+
+          <p class="terms">
+            By signing up, you agree to our <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a>.
+          </p>
+
+          <div class="agree-check">
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              class="checkb"
+              required
+            />
+            <p>Agree</p>
+          </div>
+
+          <div class="form-btn">
+            <button class="signup-btn">Create account</button>
+          </div>
+        </form>
+
+        <p class="login-link">
+          Already have an account? <span class="link">Login here</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

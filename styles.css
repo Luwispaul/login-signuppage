@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styling both pages */
+
+.form-container {
+  margin: 5% 0;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 170%;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin: 10px 0 10px 0;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+input {
+  padding: 7px;
+  width: 100%;
+  border: 1px solid #66666667;
+  border-radius: 5px;
+  margin: 0 0 20px 5px;
+}
+
+p,
+.recov-pass {
+  font-size: 90%;
+}
+span,
+.recov-pass,
+.terms a {
+  color: #252ecece;
+}
+
+.recov-cont {
+  width: 100%;
+  text-align: right;
+}
+
+.recov-pass,
+.terms a {
+  text-decoration: none;
+  text-align: left;
+}
+
+.form-btn {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+button {
+  width: 100%;
+  padding: 7px 0;
+  background-color: #036236ce;
+  border: 1px solid #036236ce;
+  color: #fff;
+  border-radius: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+/* Adjusting the signup page */
+
+.signup-form h2 {
+  margin-top: 10%;
+}
+
+.names {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 6%;
+}
+
+.names div {
+  width: 50%;
+}
+
+.names input {
+  margin-left: 0;
+}
+
+.terms {
+  text-align: left;
+}
+
+.agree-check {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.agree-check p,
+.agree-check input {
+  margin: 20px 0;
+  width: fit-content;
+  margin: 10px 0;
+}
+
+@media (max-width: 1900px) {
+  body {
+    font-size: 19px;
+  }
+  .form-container {
+    width: 550px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 25px;
+  }
+
+  button {
+    width: 80%;
+    padding: 15px 0;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .form-container {
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: none;
+    padding: 40px;
+  }
+
+  button {
+    width: 100%;
+    padding: 11px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    padding: 20px;
+  }
+}
