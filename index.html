@@ -4,47 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>login/signup page</title>
   </head>
   <body>
     <div class="form-container">
-      <div class="login-form hidden">
-        <form>
-          <h2>Login</h2>
-
-          <label for="Email">Email</label>
-          <input
-            type="text"
-            name="Email"
-            id="Email"
-            placeholder="Email"
-            required
-          />
-          <br />
-
-          <label for="password">Password</label>
-          <input
-            type="text"
-            name="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <br />
-
-          <div class="recov-cont">
-            <a href="#" class="recov-pass">Forgot password</a>
-          </div>
-          <div class="form-btn">
-            <button class="login-btn">Login</button>
-          </div>
-
-          <p class="signup-link">
-            Don't have an account? <span class="link">signup here</span>
-          </p>
-        </form>
-      </div>
-
       <div class="signup-form">
         <form>
           <h2>Register</h2>
@@ -125,9 +89,48 @@
         </form>
 
         <p class="login-link">
-          Already have an account? <span class="link">Login here</span>
+          Already have an account?
+          <span id="login-page" class="link">Login here</span>
+        </p>
+      </div>
+      <div class="login-form hidden">
+        <form>
+          <h2>Login</h2>
+
+          <label for="Email">Email</label>
+          <input
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="Email"
+            required
+          />
+          <br />
+
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <br />
+
+          <div class="recov-cont">
+            <a href="#" class="recov-pass">Forgot password</a>
+          </div>
+          <div class="form-btn">
+            <button class="login-btn">Login</button>
+          </div>
+        </form>
+
+        <p class="signup-link">
+          Don't have an account?
+          <span id=" signup-page" class="link">signup here</span>
         </p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
